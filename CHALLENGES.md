@@ -18,13 +18,13 @@
 
 ### Signup
 
-- [ ] Create a new app named `accounts`. Add it to the `INSTALLED_APPS` list in `settings.py`.
-- [ ] Create a view for signing up:
-    - [ ] Must subclass `django.views.generic.CreateView`.
-    - [ ] Set `form_class` to `django.auth.forms.UserCreationForm`.
-    - [ ] Render the `registration/signup.html` template.
-- [ ] In `accounts/urls.py`, link `SignupView` to a URL named `signup`.
-- [ ] Add `accounts.urls` to the project's URLconf.
+- [x] Create a new app named `accounts`. Add it to the `INSTALLED_APPS` list in `settings.py`.
+- [x] Create a view for signing up:
+    - [x] Must subclass `django.views.generic.CreateView`.
+    - [x] Set `form_class` to `django.auth.forms.UserCreationForm`.
+    - [x] Render the `registration/signup.html` template.
+- [x] In `accounts/urls.py`, link `SignupView` to a URL named `signup`.
+- [x] Add `accounts.urls` to the project's URLconf.
 - [ ] When a user clicks `Sign Up`, they are presented with a form to create an account, and can submit it successfully.
 
 ### Stretch Challenges
