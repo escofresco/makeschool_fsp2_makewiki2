@@ -14,7 +14,8 @@ class PageListView(ListView):
         """ GET a list of Pages. """
         pages = self.get_queryset().all()
         return render(request, 'list.html', {
-          'pages': pages
+          'pages': pages,
+          'user': request.user,
         })
 
 class PageDetailView(DetailView):
