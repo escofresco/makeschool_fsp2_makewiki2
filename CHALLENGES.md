@@ -25,7 +25,7 @@
     - [x] Render the `registration/signup.html` template.
 - [x] In `accounts/urls.py`, link `SignupView` to a URL named `signup`.
 - [x] Add `accounts.urls` to the project's URLconf.
-- [ ] When a user clicks `Sign Up`, they are presented with a form to create an account, and can submit it successfully.
+- [x] When a user clicks `Sign Up`, they are presented with a form to create an account, and can submit it successfully.
 
 ### Stretch Challenges
 
