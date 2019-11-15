@@ -27,11 +27,3 @@ class PageDetailView(DetailView):
         return render(request, 'page.html', {
           'page': page
         })
-
-# class LoginView(TemplateView):
-#     """ Renders the login page """
-#     template_name = "page.html"
-#
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#         return context
