@@ -17,14 +17,16 @@ class PageListView(ListView):
         """ GET a list of Pages. """
         pages = self.get_queryset().all()
         return render(request, 'list.html', {
-          'pages': pages,
-          'user': request.user,
+            'pages': pages,
+            'user': request.user,
         })
+
 
 class PageCreateView(CreateView):
     model = Page
     fields = ['title', 'content', 'author']
     success_url = reverse_lazy('wiki-list-page')
+
 
 class PageDetailView(DetailView):
     """ Renders a specific page based on it's slug."""
@@ -33,6 +35,4 @@ class PageDetailView(DetailView):
     def get(self, request, slug):
         """ Returns a specific wiki page by slug. """
         page = self.get_queryset().get(slug__iexact=slug)
-        return render(request, 'page.html', {
-          'page': page
-        })
+        return render(request, 'page.html', {'page': page})
