@@ -6,7 +6,6 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, FormView
 
 from wiki.models import Page
-# from .forms import PageForm
 
 
 class PageListView(ListView):
