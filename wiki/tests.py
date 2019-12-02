@@ -7,6 +7,7 @@ from django.urls import reverse
 from wiki.models import Page
 from .views import PageCreateView
 
+
 class WikiTestSuite(TestCase):
     def test_identity(self):
         """canary test"""
